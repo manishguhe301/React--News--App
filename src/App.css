@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+}
+
+.NEWS {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #cdc2ae;
+    color: black;
+}
+
+.loader-text:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    content: "Loading";
+    animation: load 1.3s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        content: "Loading";
+    }
+    25% {
+        content: "Loading.";
+    }
+    50% {
+        content: "Loading..";
+    }
+    75% {
+        content: "Loading...";
+    }
+    100% {
+        content: "Loading....";
+    }
+}
+
+.All_Cards {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 10px;
+}
+
+.Card {
+    margin-top: 20px;
+    margin-left: 10px;
+    max-width: 300px;
+    padding: 30px;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+}
+
+.Card_img {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 10%;
+    /* border-radius: 10x; */
+}
+
+.Card_title {
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.Card_desc {
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 15px;
+    /* padding-bottom: 3px; */
+}
+
+.Card_author {
+    margin-right: 10px;
+    color: cadetblue;
+}
+
+.Card_source {
+    margin-right: 10px;
+}
+
+.Card_datetime {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.a {
+    color: white;
+}
+
+.Card_source,
+.Card_datetime {
+    display: inline-block;
+    /* margin-top: px; */
+    /* display: none; */
+    color: rgb(122, 122, 122);
+}
